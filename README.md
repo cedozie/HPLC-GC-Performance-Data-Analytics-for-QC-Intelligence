@@ -68,10 +68,8 @@ Each variable supports downstream QC evaluations such as precision (%RSD), accur
 - Interactive dashboard reporting
 
 ### Project Folder Structure                
-    Chrom-Data-Analytics/
-    │
-    ├── README.md
-    │   └── Project overview, business context, lifecycle narrative
+
+    Chromatographic-Data-Analytics/
     │
     ├── excel_files/
     │   ├── hplc_gc_qc_data_raw.xlsx
@@ -81,39 +79,43 @@ Each variable supports downstream QC evaluations such as precision (%RSD), accur
     │   ├── qc_structured.db
     │   └── hplc_gc_qc_data.csv
     │
-    ├── sql_scripts/
+    ├── scripts/
     │   ├── schema_creation.sql
     │   └── data_seeding.sql
     │
-    ├── ER/
-    │   └── ER_Diagram.png
+    ├── ER_Diagram.png
     │
     ├── notebooks/
-    │   ├── 01_HPLC_GC_performance_analysis_report.ipynb
+    │   ├── 01_HPLC_GC_performance_analysis_report.ipynb  #Project overview, business context, lifecycle narrative
     │   ├── 02_data_simulation.ipynb
     │   ├── 03_SQL_database_relational_schema_creation.ipynb
     │   ├── 04_data_import_metrics_computation.ipynb
-    │   ├── 05_calibration_trend_analytics.ipynb
-    │   ├── 06_method_performance_analytics.ipynb
+    │   ├── 05_data_collection_and_profiling.ipynb
+    │   ├── 06_calibration_trend_analytics.ipynb
     │   ├── 07_qc_anomaly_analytics.ipynb
     │   ├── 08_system_suitabilty_analytics.ipynb
-    │   └── 09_integrated_tableau_ready_QC__data.ipynb
+    │   └── 09_integrated_QC_tableau_export.ipynb
     │
     ├── derived_metrics_outputs/
     │   ├── sample_metrics.csv
     │   ├── system_suitability.csv
     │   ├── calibrations.csv
-    │   └── control_summary.csv
+    │   ├── control_summary.csv
+    │   └── master_dataset.csv
     │
-    ├── python visualizations/
-    │   ├── calibration_trend_tability_charts.png
-    │   ├── QC_nomaly_detection.png
-    │   ├── method_performance_charts.png
-    │   └── instrument_system_suitability_charts.png
+    ├── visuals/
+    │   ├── calibration_trend_analysis_charts.png
+    │   ├── qc_anomaly_detection_analysis_charts.png
+    │   ├── method_performance_analysis_charts.png
+    │   └── system_suitabilty_analysis_charts.png
     │
-    └── tableau/
-        ├── tableau_master.csv
-        └── dashboard_screenshots/
+    ├── tableau/
+    │   └── dashboard_screenshots
+    │
+    ├── power_bi/
+    │   └── dashboard_screenshots
+    │
+    └── README.md
 
 ### SQL Data Modeling & Normalization
 A fully normalized SQLite schema (3NF) was designed to emulate real laboratory data infrastructure.
@@ -164,30 +166,74 @@ Python-Driven QC Analytics was performed using Pandas, NumPy, and Scikit-Learn, 
 - Time-series trend analysis to identify drift
 - Outlier and anomaly detection to flag atypical runs
 
-### Visualizations in Python
-**Quality Control and Anomaly Detection Analysis**
-figure_1_peak_area_trend.png
-figure_2_ewma_chart.png
-figure_3_cusum_chart.png
-figure_4_rolling_statistics.png
+### Key Visualizations in Python
+**(1) Quality Control and Anomaly Detection Analysis**
+##### Peak Area Trend
+<img src="visuals/figure_1_peak_area_trend.png" width="700">
+**Insight:** Peak area shows consistent behavior across runs; monitor deviations for QC anomalies.
 
-**Calibration Trend and Stability Analysis**
-figure_5_parity_plot.png
-figure_6_accuracy_heatmap.png
-figure_7_response_factor_stability.png
-figure_8_calibration_linearity_r2.png
+##### EWMA Chart
+<img src="visuals/figure_2_ewma_chart.png" width="700">
+**Insight:** Explain what this EWMA chart shows about method performance.
+  
+##### CUSUM Chart
+<img src="visuals/figure_3_cusum_chart.png" width="700">
+**Insight:** Note any trends or deviations.
 
-**Method Performance and Data Quality Analysis (Accuracy & Precision)**
-figure_9_precision_rsd_distribution.png
-figure_10_accuracy_recovery.png
-figure_11_instrument_comparison.png
+##### Rolling Statistics
+<img src="visuals/figure_4_rolling_statistics.png" width="700">
+**Insight:** Comment on variability across samples.
 
-**Instrument and System Suitability Analysis**
-figure_12_resolution_trend.png
-figure_13_cpk.png
-figure_14_plate_change.png
-figure_15_suitability_heatmap.png
-figure_16_tailing_trend.png
+**(2) Calibration Trend and Stability Analysis**
+##### Parity Plot
+<img src="visuals/figure_5_parity_plot.png" width="700">
+**Insight:** Compare predicted vs actual concentrations.
+
+##### Accuracy Heatmap
+<img src="visuals/figure_6_accuracy_heatmap.png" width="700">
+**Insight:** Highlight accuracy performance across instruments.
+
+##### Response Factor Stability
+<img src="visuals/figure_7_response_factor_stability.png" width="700">
+**Insight:** Check instrument consistency.
+
+##### Calibration Linearity (R²)
+<img src="visuals/figure_8_calibration_linearity_r2.png" width="700">
+**Insight:** Ensure linear response for quantification.
+
+**(3) Method Performance and Data Quality Analysis (Accuracy & Precision)**
+##### Precision (RSD Distribution)
+<img src="visuals/figure_9_precision_rsd_distribution.png" width="700">
+**Insight:** Evaluate repeatability of measurements.
+
+##### Accuracy Recovery
+<img src="visuals/figure_10_accuracy_recovery.png" width="700">
+**Insight:** Recovery percentages indicate method correctness.
+
+##### Instrument Comparison
+<img src="visuals/figure_11_instrument_comparison.png" width="700">
+**Insight:** Compare performance metrics across instruments.
+
+**(4) Instrument and System Suitability Analysis**
+##### Resolution Trend
+<img src="visuals/figure_12_resolution_trend.png" width="700">
+**Insight:** Track chromatographic resolution over time.
+
+##### Cpk Analysis
+<img src="visuals/figure_13_cpk.png" width="700">
+**Insight:** Monitor process capability.
+
+##### Plate Change Impact
+<img src="visuals/figure_14_plate_change.png" width="700">
+**Insight:** Evaluate effect of column/plate changes.
+
+##### System Suitability Heatmap
+<img src="visuals/figure_15_suitability_heatmap.png" width="700">
+**Insight:** Quick overview of system suitability across runs.
+
+##### Tailing Factor Trend
+<img src="visuals/figure_16_tailing_trend.png" width="700">
+**Insight:** Check peak symmetry for method performance.
 
 ### Key Findings and Insights
 - Calibration models remain linear but show early response factor drift

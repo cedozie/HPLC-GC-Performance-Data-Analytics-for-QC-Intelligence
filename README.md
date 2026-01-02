@@ -167,73 +167,76 @@ Python-Driven QC Analytics was performed using Pandas, NumPy, and Scikit-Learn, 
 - Outlier and anomaly detection to flag atypical runs
 
 ### Key Visualizations in Python
-**(1) Quality Control and Anomaly Detection Analysis**
-##### Peak Area Trend
-<img src="visuals/figure_1_peak_area_trend.png" width="700">
-**Insight:** Peak area shows consistent behavior across runs; monitor deviations for QC anomalies.
+#### (1) Quality Control and Anomaly Detection Analysis
+**Peak Area Trend**
+<img src="visuals/figure_1_peak_area_trend.png" width="700">  
+Insight: Peak area shows consistent behavior across runs; monitor deviations for QC anomalies.
 
-##### EWMA Chart
-<img src="visuals/figure_2_ewma_chart.png" width="700">
-**Insight:** Explain what this EWMA chart shows about method performance.
+**EWMA Chart**
+<img src="visuals/figure_2_ewma_chart.png" width="700">  
+Insight: Explain what this EWMA chart shows about method performance.
   
-##### CUSUM Chart
-<img src="visuals/figure_3_cusum_chart.png" width="700">
-**Insight:** Note any trends or deviations.
+**CUSUM Chart**
+<img src="visuals/figure_3_cusum_chart.png" width="700">  
+Insight: Note any trends or deviations.
 
-##### Rolling Statistics
-<img src="visuals/figure_4_rolling_statistics.png" width="700">
-**Insight:** Comment on variability across samples.
+**Rolling Statistics**
+<img src="visuals/figure_4_rolling_statistics.png" width="700">  
+Insight: Comment on variability across samples.
 
-**(2) Calibration Trend and Stability Analysis**
-##### Parity Plot
-<img src="visuals/figure_5_parity_plot.png" width="700">
-**Insight:** Compare predicted vs actual concentrations.
 
-##### Accuracy Heatmap
-<img src="visuals/figure_6_accuracy_heatmap.png" width="700">
-**Insight:** Highlight accuracy performance across instruments.
+#### (2) Calibration Trend and Stability Analysis
+**Parity Plot**
+<img src="visuals/figure_5_parity_plot.png" width="700">  
+Insight: Compare predicted vs actual concentrations.
 
-##### Response Factor Stability
-<img src="visuals/figure_7_response_factor_stability.png" width="700">
-**Insight:** Check instrument consistency.
+**Accuracy Heatmap**
+<img src="visuals/figure_6_accuracy_heatmap.png" width="700">  
+Insight: Highlight accuracy performance across instruments.
 
-##### Calibration Linearity (R²)
-<img src="visuals/figure_8_calibration_linearity_r2.png" width="700">
-**Insight:** Ensure linear response for quantification.
+**Response Factor Stability**
+<img src="visuals/figure_7_response_factor_stability.png" width="700">  
+Insight: Check instrument consistency.
 
-**(3) Method Performance and Data Quality Analysis (Accuracy & Precision)**
-##### Precision (RSD Distribution)
-<img src="visuals/figure_9_precision_rsd_distribution.png" width="700">
-**Insight:** Evaluate repeatability of measurements.
+**Calibration Linearity (R²)**
+<img src="visuals/figure_8_calibration_linearity_r2.png" width="700">  
+Insight: Ensure linear response for quantification.
 
-##### Accuracy Recovery
-<img src="visuals/figure_10_accuracy_recovery.png" width="700">
-**Insight:** Recovery percentages indicate method correctness.
 
-##### Instrument Comparison
-<img src="visuals/figure_11_instrument_comparison.png" width="700">
-**Insight:** Compare performance metrics across instruments.
+#### (3) Method Performance and Data Quality Analysis (Accuracy & Precision)
+**Precision (RSD Distribution)**
+<img src="visuals/figure_9_precision_rsd_distribution.png" width="700">  
+Insight: Evaluate repeatability of measurements.
 
-**(4) Instrument and System Suitability Analysis**
-##### Resolution Trend
-<img src="visuals/figure_12_resolution_trend.png" width="700">
-**Insight:** Track chromatographic resolution over time.
+**Accuracy Recovery**
+<img src="visuals/figure_10_accuracy_recovery.png" width="700">  
+Insight: Recovery percentages indicate method correctness.
 
-##### Cpk Analysis
-<img src="visuals/figure_13_cpk.png" width="700">
-**Insight:** Monitor process capability.
+**Instrument Comparison**
+<img src="visuals/figure_11_instrument_comparison.png" width="700">  
+Insight: Compare performance metrics across instruments.
 
-##### Plate Change Impact
-<img src="visuals/figure_14_plate_change.png" width="700">
-**Insight:** Evaluate effect of column/plate changes.
 
-##### System Suitability Heatmap
-<img src="visuals/figure_15_suitability_heatmap.png" width="700">
-**Insight:** Quick overview of system suitability across runs.
+#### (4) Instrument and System Suitability Analysis
+**Resolution Trend**
+<img src="visuals/figure_12_resolution_trend.png" width="700">  
+Insight: Track chromatographic resolution over time.
 
-##### Tailing Factor Trend
-<img src="visuals/figure_16_tailing_trend.png" width="700">
-**Insight:** Check peak symmetry for method performance.
+**Cpk Analysis**
+<img src="visuals/figure_13_cpk.png" width="700">  
+Insight: Monitor process capability.
+
+**Plate Change Impact**
+<img src="visuals/figure_14_plate_change.png" width="700">  
+Insight: Evaluate effect of column/plate changes.
+
+**System Suitability Heatmap**
+<img src="visuals/figure_15_suitability_heatmap.png" width="700">  
+Insight: Quick overview of system suitability across runs.
+
+**Tailing Factor Trend**
+<img src="visuals/figure_16_tailing_trend.png" width="700">  
+Insight: Check peak symmetry for method performance.
 
 ### Key Findings and Insights
 - Calibration models remain linear but show early response factor drift

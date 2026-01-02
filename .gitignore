@@ -1,0 +1,17 @@
+# macOS system files
+.DS_Store
+
+# Jupyter temporary files
+.ipynb_checkpoints/
+.notebooks/.jupyter/
+
+# Excel temporary files
+~$*.xlsx
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Databases (optional – keep only if intended)
+*.db
+

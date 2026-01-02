@@ -3,10 +3,11 @@ This repository showcases an end-to-end data analytics project that analyzes HPL
 Excel, SQL, Python, Tableau, and Power BI. It demonstrates data cleaning, relational database modeling, statistical QC, 
 anomaly detection, time-series analysis, culminating in interactive dashboards for monitoring calibration performance and instrument health.
 
-#### Author: Christopher Edozie SundayTech Stack:** Excel | SQL (SQLite)| Python| Jupyter Notebook| Tableau| Power BI| GitHub Pages
-#### Project Type: Analytical Chemistry / Data Analytics
-#### Stakeholders: QC Managers, Lab Supervisors, and Data Analysis Teams
-#### Keywords: Data Analytics, SQL, Python, Tableau, Dashboards, Power BI, Data Modeling, Statistical Analysis, Time-series Analysis, Anomaly Detection, KPIs
+#### Author: Christopher Edozie Sunday  
+#### Tech Stack: Excel | SQL (SQLite)| Python| Jupyter Notebook| Tableau| Power BI| GitHub Pages  
+#### Project Type: Analytical Chemistry / Data Analytics  
+#### Stakeholders: QC Managers, Lab Supervisors, and Data Analysis Teams  
+#### Keywords: Data Analytics, SQL, Python, Tableau, Dashboards, Power BI, Data Modeling, Statistical Analysis, Time-series Analysis, Anomaly Detection, KPIs 
 #### Status: This project is under active development. Report structure, notebooks, and visualizations will be incrementally refined to reflect real-world regulated laboratory analytics.
 
 ### Project Overview
@@ -167,74 +168,78 @@ Python-Driven QC Analytics was performed using Pandas, NumPy, and Scikit-Learn, 
 - Outlier and anomaly detection to flag atypical runs
 
 ### Key Visualizations in Python
-#### (1) Quality Control and Anomaly Detection Analysis
-**Peak Area Trend**
+#### (1) Quality Control and Anomaly Detection Analysis  
+
+**Peak Area Trend**  
 <img src="visuals/figure_1_peak_area_trend.png" width="700">  
 Insight: Peak area shows consistent behavior across runs; monitor deviations for QC anomalies.
 
-**EWMA Chart**
+**EWMA Chart**  
 <img src="visuals/figure_2_ewma_chart.png" width="700">  
 Insight: Explain what this EWMA chart shows about method performance.
   
-**CUSUM Chart**
+**CUSUM Chart**  
 <img src="visuals/figure_3_cusum_chart.png" width="700">  
 Insight: Note any trends or deviations.
 
-**Rolling Statistics**
+**Rolling Statistics**  
 <img src="visuals/figure_4_rolling_statistics.png" width="700">  
 Insight: Comment on variability across samples.
 
 
 #### (2) Calibration Trend and Stability Analysis
-**Parity Plot**
+
+**Parity Plot**  
 <img src="visuals/figure_5_parity_plot.png" width="700">  
 Insight: Compare predicted vs actual concentrations.
 
-**Accuracy Heatmap**
+**Accuracy Heatmap**  
 <img src="visuals/figure_6_accuracy_heatmap.png" width="700">  
 Insight: Highlight accuracy performance across instruments.
 
-**Response Factor Stability**
+**Response Factor Stability**  
 <img src="visuals/figure_7_response_factor_stability.png" width="700">  
 Insight: Check instrument consistency.
 
-**Calibration Linearity (R²)**
+**Calibration Linearity (R²)**  
 <img src="visuals/figure_8_calibration_linearity_r2.png" width="700">  
 Insight: Ensure linear response for quantification.
 
 
 #### (3) Method Performance and Data Quality Analysis (Accuracy & Precision)
-**Precision (RSD Distribution)**
+
+**Precision (RSD Distribution)**  
 <img src="visuals/figure_9_precision_rsd_distribution.png" width="700">  
 Insight: Evaluate repeatability of measurements.
 
-**Accuracy Recovery**
+**Accuracy Recovery**  
 <img src="visuals/figure_10_accuracy_recovery.png" width="700">  
 Insight: Recovery percentages indicate method correctness.
 
-**Instrument Comparison**
+**Instrument Comparison**  
 <img src="visuals/figure_11_instrument_comparison.png" width="700">  
 Insight: Compare performance metrics across instruments.
 
 
 #### (4) Instrument and System Suitability Analysis
-**Resolution Trend**
+
+**Resolution Trend**  
 <img src="visuals/figure_12_resolution_trend.png" width="700">  
 Insight: Track chromatographic resolution over time.
 
-**Cpk Analysis**
+**Cpk Analysis**  
 <img src="visuals/figure_13_cpk.png" width="700">  
 Insight: Monitor process capability.
 
-**Plate Change Impact**
+**Plate Change Impact**  
 <img src="visuals/figure_14_plate_change.png" width="700">  
 Insight: Evaluate effect of column/plate changes.
 
-**System Suitability Heatmap**
+**System Suitability Heatmap**  
 <img src="visuals/figure_15_suitability_heatmap.png" width="700">  
 Insight: Quick overview of system suitability across runs.
 
-**Tailing Factor Trend**
+**Tailing Factor Trend**  
 <img src="visuals/figure_16_tailing_trend.png" width="700">  
 Insight: Check peak symmetry for method performance.
 

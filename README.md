@@ -86,8 +86,11 @@ Each variable supports downstream QC evaluations such as precision (%RSD), accur
     │
     ├── ER_Diagram.png
     │
-    ├── notebooks/
+    ├── reports/
     │   ├── 01_HPLC_GC_performance_analysis_report.ipynb  #Project overview, business context, lifecycle narrative
+    │   └── 01_HPLC_GC_performance_analysis_report.html
+    │
+    ├── notebooks/
     │   ├── 02_data_simulation.ipynb
     │   ├── 03_SQL_database_relational_schema_creation.ipynb
     │   ├── 04_data_import_metrics_computation.ipynb

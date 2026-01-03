@@ -4,7 +4,7 @@ Excel, SQL, Python, Tableau, and Power BI. It demonstrates data cleaning, relati
 anomaly detection, time-series analysis, culminating in interactive dashboards for monitoring calibration performance and instrument health.
 
 #### Author: Christopher Edozie Sunday  
-#### Tech Stack: Excel | SQL (SQLite)| Python| Jupyter Notebook| Tableau| Power BI| GitHub Pages  
+#### Tech Stack: Excel | SQL (SQLite)| Python| Jupyter Notebook| Tableau| Power BI  
 #### Project Type: Analytical Chemistry / Data Analytics  
 #### Stakeholders: QC Managers, Lab Supervisors, and Data Analysis Teams  
 #### Keywords: Data Analytics, SQL, Python, Tableau, Dashboards, Power BI, Data Modeling, Statistical Analysis, Time-series Analysis, Anomaly Detection, KPIs 

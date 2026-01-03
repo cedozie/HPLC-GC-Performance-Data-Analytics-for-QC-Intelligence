@@ -397,6 +397,6 @@ This project is licensed under the MIT License.
 - Analytical scientist with expertise in chromatography, quality control, data analytics, and laboratory informatics. Experienced in translating complex analytical data into actionable insights across regulated and research environments. 
 - LinkedIn Profile: https://www.linkedin.com/in/c-sunday/
 - GitHub Portfolio: https://github.com/cedozie
-- Email: c.edozie.sund
+- Email: c.edozie.sunday@gmail.com
 
 

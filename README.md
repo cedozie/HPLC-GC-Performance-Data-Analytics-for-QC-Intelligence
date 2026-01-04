@@ -270,7 +270,7 @@ Instruments exhibiting stable peak area trends, low variability, and minimal con
 **Actionable recommendation:** Apply Westgard rule evaluation, review calibration preparation and detector performance, and initiate preventive maintenance and trending per FDA, ICH Q2/Q14, and ISO 17025.
 
 **Calibration Linearity (R²)**  
-<img src="visuals/figure_8_calibration_linearity_r2.png" width="700">   
+<img src="visuals/figure_8_calibration_linearity_r2.png" width="700">  
 **Notebook:** `notebooks/05_calibration_trend_analysis.ipynb`
 **Data-driven insight:** Calibration linearity (R²) meets predefined acceptance criteria across instruments, demonstrating adequate method linearity and model fit.  
 **Risk:** Marginal proximity to the acceptance threshold may reduce sensitivity to emerging non-linearity over time.  

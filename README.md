@@ -1,19 +1,19 @@
 # HPLC-GC-Performance-Data-Analytics-for-QC-Intelligence
 This repository showcases an end-to-end data analytics project that analyzes data from HPLC and GC instruments using Excel, SQL, Python, Tableau, and Power BI. It demonstrates data cleaning, relational database modeling, statistical QC, anomaly detection, time-series analysis, culminating in interactive dashboards for monitoring calibration performance and instrument health.
-
 --
+
 #### Author: Christopher Edozie Sunday  
 #### Tech Stack: Excel | SQL (SQLite)| Python| Jupyter Notebook| Tableau| Power BI  
 #### Project Type: Analytical Chemistry / Data Analytics  
 #### Stakeholders: QC Scientists, Analytical Chemists, QC Managers, Lab Supervisors, and Data Analysis Teams  
 #### Keywords: Data Analytics, SQL, Python, Tableau, Dashboards, Power BI, Data Modeling, Statistical Analysis, Time-series Analysis, Anomaly Detection, KPIs 
 #### Status: This project is under active development. Report structure, notebooks, and visualizations will be incrementally refined to reflect real-world regulated laboratory analytics.
-
 --
+
 ### Project Overview
 This project demonstrates analytics workflow that transforms laboratory-generated performance data from HPLC and GC instruments into actionable quality intelligence, enabling early detection of the instrument drift, calibration instability, and process anomalies before they compromise results. It bridges the gap between raw chromatographic outputs and decision-ready insights, allowing scientists, quality professionals, and supervisors to proactively monitor instrument performance, method stability, and analytical reliability.
-
 --
+
 ### Project Relevance to Quality Control Scientist and Quality Intelligence Roles
 This project is designed to reflect real-world laboratory operations in manufacturing quality control, mining assay laboratories, and research facilities where data integrity, reproducibility, and timely interpretation of results are critical. This demonstrates actual responsibilities of QC Scientists, Analytical Chemists, QC Managers, Lab Supervisors, and Data Analysis Teams that works in regulated environments, including:
 
@@ -24,8 +24,8 @@ This project is designed to reflect real-world laboratory operations in manufact
 - Translation of raw analytical data into actionable quality intelligence
 
 The workflow mirrors industry practice by integrating Excel-based laboratory data, SQL-driven data structuring, and Python-based statistical analysis to support regulatory-compliant quality decisions.
-
 --
+
 ### Scientific & Quality Context of this Project
 Chromatographic data is foundational to analytical decision-making, yet it is often siloed within instrument software, inconsistently structured, and underutilized for trend-based quality monitoring. Across regulated and non-regulated environments, laboratories face common challenges:
 
@@ -35,8 +35,8 @@ Chromatographic data is foundational to analytical decision-making, yet it is of
 - Limited visibility into long-term trends
 
 In pharmaceutical and mining laboratories, these issues directly impact compliance, throughput, and risk management. In academic or research settings, they affect data reliability, reproducibility, and research validity. This project addresses these challenges through structured data modeling and statistical analysis.
-
 --
+
 ### Project Objectives
 - Clean and convert raw HPLC/GC data into structured, analysis-ready datasets
 - Design a 3NF relational schema suitable for chromatographic quality control data

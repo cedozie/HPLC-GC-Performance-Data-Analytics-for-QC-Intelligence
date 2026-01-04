@@ -1,21 +1,28 @@
 # HPLC-GC-Performance-Data-Analytics-for-QC-Intelligence
-This repository showcases an end-to-end data analytics project that analyzes HPLC and GC quality control (QC) data using 
-Excel, SQL, Python, Tableau, and Power BI. It demonstrates data cleaning, relational database modeling, statistical QC, 
-anomaly detection, time-series analysis, culminating in interactive dashboards for monitoring calibration performance and instrument health.
+This repository showcases an end-to-end data analytics project that analyzes data from HPLC and GC instruments using Excel, SQL, Python, Tableau, and Power BI. It demonstrates data cleaning, relational database modeling, statistical QC, anomaly detection, time-series analysis, culminating in interactive dashboards for monitoring calibration performance and instrument health.
 
 #### Author: Christopher Edozie Sunday  
 #### Tech Stack: Excel | SQL (SQLite)| Python| Jupyter Notebook| Tableau| Power BI  
 #### Project Type: Analytical Chemistry / Data Analytics  
-#### Stakeholders: QC Managers, Lab Supervisors, and Data Analysis Teams  
+#### Stakeholders: QC Scientists, Analytical Chemists, QC Managers, Lab Supervisors, and Data Analysis Teams  
 #### Keywords: Data Analytics, SQL, Python, Tableau, Dashboards, Power BI, Data Modeling, Statistical Analysis, Time-series Analysis, Anomaly Detection, KPIs 
 #### Status: This project is under active development. Report structure, notebooks, and visualizations will be incrementally refined to reflect real-world regulated laboratory analytics.
 
 ### Project Overview
-This project demonstrates an end-to-end data analytics workflow that transforms laboratory-generated HPLC and GC performance data into actionable quality intelligence, enabling early detection of instrument drift, calibration instability, and process anomalies before they compromise results. It bridges the gap between raw chromatographic outputs and decision-ready insights, allowing scientists, quality professionals, and supervisors to proactively monitor instrument performance, method stability, and analytical reliability.
+This project demonstrates analytics workflow that transforms laboratory-generated performance data from HPLC and GC instruments into actionable quality intelligence, enabling early detection of the instrument drift, calibration instability, and process anomalies before they compromise results. It bridges the gap between raw chromatographic outputs and decision-ready insights, allowing scientists, quality professionals, and supervisors to proactively monitor instrument performance, method stability, and analytical reliability.
 
-This project is designed to reflect real-world laboratory operations in pharmaceutical quality control, mining assay laboratories, and academic research facilities, where data integrity, reproducibility, and timely interpretation of results are critical.
+### Project Relevance to Quality Control Scientist and Quality Intelligence Roles
+This project is designed to reflect real-world laboratory operations in manufacturing quality control, mining assay laboratories, and research facilities where data integrity, reproducibility, and timely interpretation of results are critical. This demonstrates actual responsibilities of QC Scientists, Analytical Chemists, QC Managers, Lab Supervisors, and Data Analysis Teams that works in regulated environments, including:
 
-### Scientific & Quality Context
+- Trending of chromatographic performance data for compliance monitoring
+- Identification of early warning signals prior to specification failure
+- Support of deviation investigations through data-driven evidence
+- Instrument performance monitoring and method lifecycle management
+- Translation of raw analytical data into actionable quality intelligence
+
+The workflow mirrors industry practice by integrating Excel-based laboratory data, SQL-driven data structuring, and Python-based statistical analysis to support regulatory-compliant quality decisions.
+
+### Scientific & Quality Context of this Project
 Chromatographic data is foundational to analytical decision-making, yet it is often siloed within instrument software, inconsistently structured, and underutilized for trend-based quality monitoring. Across regulated and non-regulated environments, laboratories face common challenges:
 
 - Instrument drift and performance variability
@@ -23,21 +30,40 @@ Chromatographic data is foundational to analytical decision-making, yet it is of
 - Fragmented data across instruments and runs
 - Limited visibility into long-term trends
 
-In pharmaceutical and mining laboratories, these issues directly impact compliance, throughput, and risk management. In academic settings, they affect data reliability, reproducibility, and research validity. This project addresses these challenges through structured data modeling and statistical analysis.
+In pharmaceutical and mining laboratories, these issues directly impact compliance, throughput, and risk management. In academic or research settings, they affect data reliability, reproducibility, and research validity. This project addresses these challenges through structured data modeling and statistical analysis.
 
-### Objectives
-- Convert raw HPLC/GC data into structured, analysis-ready datasets
+### Project Objectives
+- Clean and convert raw HPLC/GC data into structured, analysis-ready datasets
 - Design a 3NF relational schema suitable for chromatographic quality control data
-- Implement foreign keys & indexing, and demonstrate SQL joins
+- Implement foreign keys and indexing, and demonstrate SQL joins
+- Compute accuracy, precision, calibration, and system suitability metrics
 - Monitor instrument and method performance over time
-- Detect anomalies, drift, and emerging quality risks early
-- Support preventive maintenance and method optimization
-- Demonstrate audit-ready, reproducible analytics workflows in JupyterLab (DDL + queries)
-- Build interactive Tableau dashboards for quality control review
+- Detect instrument drift early, anomalies, and out-of-control conditions
+- Produce audit-ready and reproducible end-to-end analytics workflow in JupyterLab (DDL + queries)
+- Produce narrative-driven Jupyter Notebooks explaining analytical intent and methodology
+- Scientific visualization in Python for QC interpretation and decision support
+- Build interactive Tableau dashboards for performance monitoring
+- Generate KPI-driven report in Power BI for management and quality review
 - Bridge analytical chemistry and data analytics
 
+### Quality & Compliance Relevance
+This project applies data analytics to chromatographic quality control within a regulated laboratory framework. Analytical performance metrics are evaluated using principles consistent with:
+
+- ICH Q2(R2): Validation of Analytical Procedures
+- ICH Q14: Analytical Procedure Development
+- FDA and EMA expectations for ongoing performance verification
+- ISO/IEC 17025 requirements for method control and monitoring
+
+Key quality objectives addressed include:
+- System suitability trending and early detection of performance drift
+- Instrument equivalency and data comparability
+- Method precision, accuracy, and robustness assessment
+- Proactive identification of risks leading to OOS or OOT results
+
+The analytical insights generated support deviation prevention, CAPA prioritization, and data-driven decision-making in QC and analytical development environments.
+
 ### Data Description
-The project uses a simulated chromatographic QC dataset designed to closely reflect real HPLC/GC laboratory outputs while avoiding proprietary or confidential data exposure.
+This project used a simulated chromatographic QC dataset designed to closely reflect real HPLC/GC laboratory outputs while avoiding proprietary or confidential data exposure.
 Key variables include:
 
     | Variables         | Purpose                                             |
@@ -54,12 +80,13 @@ Key variables include:
 Each variable supports downstream QC evaluations such as precision (%RSD), accuracy (%recovery), and system suitability trending.
 
 ### Tools & Technologies
-    | Tools        | Purpose                                                                           |
-    | ------------ | --------------------------------------------------------------------------------- |
-    | Excel        | Data simulation, initial data profiling, formatting, and sanity checks            |
-    | SQL + SQLite | Relational database design, normalization, traceability, querying                 |
-    | Python       | Statistical quality control, anomaly detection, trend analysis, pre-visualization |
-    | Tableau      | Interactive dashboards for performance monitoring                                 |
+    | Tools        | Purpose                                                                                       |
+    | ------------ | --------------------------------------------------------------------------------------------- |
+    | Excel        | Data simulation, initial data profiling, formatting, and sanity checks                        |
+    | SQL + SQLite | Relational database design, normalization, traceability, querying                             |
+    | Python       | QC metrics, Statistical quality control, anomaly detection, trend analysis, pre-visualization |
+    | Tableau      | Interactive dashboards for performance monitoring and reporting                               |
+    | Power BI     | KPI-driven report for management and quality review                                           |
 
 ### Workflow Architecture
 - Data ingestion and cleaning
@@ -70,7 +97,7 @@ Each variable supports downstream QC evaluations such as precision (%RSD), accur
 
 ### Project Folder Structure                
 
-    Chromatographic-Data-Analytics/
+    HPLC-GC-Performance-Data-Analytics-for-QC-Intelligence/
     │
     ├── excel_files/
     │   ├── hplc_gc_qc_data_raw.xlsx
@@ -147,7 +174,7 @@ Python-Driven QC Analytics was performed using Pandas, NumPy, and Scikit-Learn, 
 - Response factor stability
 - Linearity assessment
 
-**(c) Statistical Process Control**
+**(c) Statistical Quality Control**
 - Shewhart limits
 - EWMA charts
 - CUSUM charts
@@ -175,76 +202,109 @@ Python-Driven QC Analytics was performed using Pandas, NumPy, and Scikit-Learn, 
 
 **Peak Area Trend**  
 <img src="visuals/figure_1_peak_area_trend.png" width="700">  
-Insight: Peak area shows consistent behavior across runs; monitor deviations for QC anomalies.
+**Notebook:** `notebooks/07_qc_anomaly_analysis.ipynb`  
+**Data-driven insight:** Peak area trends remain statistically controlled across instruments, with isolated >±3σ excursions detected over time.  
+**Risk:** Potential loss of quantitative accuracy due to intermittent injector, detector, or sample preparation variability, increasing OOS risk.  
+**Actionable recommendation:** Initiate targeted deviation review, verify system suitability, and trend instrument performance per ICH Q2/Q14 and ISO 17025.
 
 **EWMA Chart**  
-<img src="visuals/figure_2_ewma_chart.png" width="700">  
-Insight: Explain what this EWMA chart shows about method performance.
-  
+<img src="visuals/figure_2_ewma_chart.png" width="700">    
+**Notebook:** `notebooks/07_qc_anomaly_analysis.ipynb`  
+**Data-driven insight:** EWMA trends show gradual peak area shifts approaching control limits across sequential runs, indicating low-level systematic drift not evident in individual results.  
+**Risk:** Early method bias may progress to OOS or compromised quantitation if unaddressed.  
+**Actionable recommendation:** Enhance trending review, verify system suitability parameters, and perform proactive instrument maintenance per ICH Q2/Q14 expectations.
+
 **CUSUM Chart**  
-<img src="visuals/figure_3_cusum_chart.png" width="700">  
-Insight: Note any trends or deviations.
+<img src="visuals/figure_3_cusum_chart.png" width="700">   
+**Notebook:** `notebooks/07_qc_anomaly_analysis.ipynb`  
+**Data-driven insight:** CUSUM charts demonstrate sustained cumulative deviation from the historical mean across sequential runs, indicating persistent low-magnitude bias not captured by Shewhart limits.  
+**Risk:** Undetected systematic drift may compromise long-term method accuracy and lead to delayed OOS findings.  
+**Actionable recommendation:** Trigger trend-based investigation, reassess method control strategy, and implement preventive maintenance per ICH Q14 and ISO 17025.
 
 **Rolling Statistics**  
 <img src="visuals/figure_4_rolling_statistics.png" width="700">  
-Insight: Comment on variability across samples.
+**Notebook:** `notebooks/07_qc_anomaly_analysis.ipynb`  
+**Data-driven insight:** Rolling mean and variability metrics show gradual increases over time, indicating emerging instability in quantitative response across sequential runs.  
+**Risk:** Progressive loss of method precision and robustness, increasing likelihood of OOS or invalid trend conclusions.  
+**Actionable recommendation:**  Strengthen ongoing performance monitoring, review maintenance and consumables, and reassess control limits per ICH Q2/Q14 and ISO 17025 expectations.
+
+#### QC and Anomaly Detection Analysis Conclusions/ Instrument Fitness
+Instruments exhibiting stable peak area trends, low variability, and minimal control-chart violations were deemed fit for continued routine use. Instruments displaying persistent EWMA or CUSUM deviations require further investigation and potential corrective action prior to continued deployment.
 
 
 #### (2) Calibration Trend and Stability Analysis
 
 **Parity Plot**  
 <img src="visuals/figure_5_parity_plot.png" width="700">  
-Insight: Compare predicted vs actual concentrations.
+**Notebook:** `notebooks/05_calibration_trend_analysis.ipynb`  
+**Data-driven insight:** Parity plots show strong linear agreement with the 1:1 line across instruments, with minor dispersion at higher concentrations, indicating generally acceptable calibration accuracy.  
+**Risk:** Emerging bias at range extremes may impact quantitation accuracy and reportable results.  
+**Actionable recommendation:** Review calibration model fit and range suitability, verify r² and recovery against acceptance criteria, and update calibration strategy per ICH Q2/Q14 and ISO 17025.
 
 **Accuracy Heatmap**  
 <img src="visuals/figure_6_accuracy_heatmap.png" width="700">  
-Insight: Highlight accuracy performance across instruments.
+**Notebook:** `notebooks/05_calibration_trend_analysis.ipynb`  
+**Data-driven insight:** Mean percent recovery remains largely centered around 100% across instruments and months, with localized periods approaching acceptance limits, indicating emerging temporal variability.  
+**Risk:** Sustained recovery drift may compromise method accuracy and reportable results, increasing OOS risk.  
+**Actionable recommendation:** Implement enhanced accuracy trending, review calibration and sample preparation practices, and initiate preventive CAPA per ICH Q2/Q14 and ISO 17025.
+
+
 
 **Response Factor Stability**  
 <img src="visuals/figure_7_response_factor_stability.png" width="700">  
-Insight: Check instrument consistency.
+Insight: Check instrument consistency.  
+Notebook: `notebooks/05_calibration_trend_analysis.ipynb`
 
 **Calibration Linearity (R²)**  
 <img src="visuals/figure_8_calibration_linearity_r2.png" width="700">  
-Insight: Ensure linear response for quantification.
+Insight: Ensure linear response for quantification.  
+Notebook: `notebooks/05_calibration_trend_analysis.ipynb`
 
 
 #### (3) Method Performance and Data Quality Analysis (Accuracy & Precision)
 
 **Precision (RSD Distribution)**  
 <img src="visuals/figure_9_precision_rsd_distribution.png" width="700">  
-Insight: Evaluate repeatability of measurements.
+Insight: Evaluate repeatability of measurements.  
+Notebook: `notebooks/06_method_performance_analysis.ipynb`
 
 **Accuracy Recovery**  
 <img src="visuals/figure_10_accuracy_recovery.png" width="700">  
-Insight: Recovery percentages indicate method correctness.
+Insight: Recovery percentages indicate method correctness.  
+Notebook: `notebooks/06_method_performance_analysis.ipynb`
 
 **Instrument Comparison**  
 <img src="visuals/figure_11_instrument_comparison.png" width="700">  
-Insight: Compare performance metrics across instruments.
+Insight: Compare performance metrics across instruments.  
+Notebook: `notebooks/06_method_performance_analysis.ipynb`
 
 
 #### (4) Instrument and System Suitability Analysis
 
 **Resolution Trend**  
 <img src="visuals/figure_12_resolution_trend.png" width="700">  
-Insight: Track chromatographic resolution over time.
+Insight: Track chromatographic resolution over time.  
+Notebook: `notebooks/08_system_suitabilty_analysis.ipynb`
 
 **Cpk Analysis**  
 <img src="visuals/figure_13_cpk.png" width="700">  
-Insight: Monitor process capability.
+Insight: Monitor process capability.  
+Notebook: `notebooks/08_system_suitabilty_analysis.ipynb`
 
 **Plate Change Impact**  
 <img src="visuals/figure_14_plate_change.png" width="700">  
-Insight: Evaluate effect of column/plate changes.
+Insight: Evaluate effect of column/plate changes.  
+Notebook: `notebooks/08_system_suitabilty_analysis.ipynb`
 
 **System Suitability Heatmap**  
 <img src="visuals/figure_15_suitability_heatmap.png" width="700">  
-Insight: Quick overview of system suitability across runs.
+Insight: Quick overview of system suitability across runs.  
+Notebook: `notebooks/08_system_suitabilty_analysis.ipynb`
 
 **Tailing Factor Trend**  
 <img src="visuals/figure_16_tailing_trend.png" width="700">  
-Insight: Check peak symmetry for method performance.
+Insight: Check peak symmetry for method performance.  
+Notebook: `notebooks/08_system_suitabilty_analysis.ipynb`
 
 ### Key Findings and Insights
 - Calibration models remain linear but show early response factor drift
@@ -313,7 +373,7 @@ pip install pandas numpy matplotlib seaborn sqlalchemy jupyter
     - Quality intelligence insights for regulated laboratory environments
 - Explore dashboards for interactive insights  
 
-(Detailed instructions are provided in the Jupyter notebooks)
+(More detailed instructions are provided in the Jupyter notebooks)
 
 #### 3. View the Full Report
 Open the following link in any browser to view a consolidated analytical report (narrative and QC insights) as a static HTML page:  

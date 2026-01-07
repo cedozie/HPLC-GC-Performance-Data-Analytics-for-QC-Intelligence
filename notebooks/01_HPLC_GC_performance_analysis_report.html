@@ -7516,15 +7516,60 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><strong>Title:</strong> HPLC/GC Performance Data Analytics for Quality Control Intelligence</p>
-<p><strong>Author:</strong> Christopher Edozie Sunday<br/>
-<strong>Tools Used:</strong> Excel, SQL (SQLite), Python, Jupyter Notebook &amp; Tableau<br/>
+<h3 id="HPLC/GC-Performance-Data-Analytics-for-Quality-Control-Intelligence">HPLC/GC Performance Data Analytics for Quality Control Intelligence<a class="anchor-link" href="#HPLC/GC-Performance-Data-Analytics-for-Quality-Control-Intelligence">¶</a></h3><p><strong>Author:</strong> Christopher Edozie Sunday<br/>
+<strong>Tools Used:</strong> Excel, SQL (SQLite), Python, Jupyter Notebook, Tableau  &amp; Power BI
 <strong>Domain:</strong> Analytical Chemistry / Data Analytics<br/>
 <strong>Date:</strong> 31 st December 2025</p>
 <hr/>
-<h4 id="Business-Task-Statement:">Business Task Statement:<a class="anchor-link" href="#Business-Task-Statement:">¶</a></h4><p>Analytical laboratories rely on HPLC and GC instruments to generate data that directly impacts product quality, regulatory compliance, and operational efficiency. However, chromatographic QC data often remains under-utilized, fragmented across spreadsheets, databases, and instrument software.</p>
-<p>This project demonstrates how laboratory QC data can be transformed into actionable quality intelligence, enabling early detection of instrument drift, calibration instability, and process anomalies before they compromise results.</p>
-<h4 id="Primary-Business-Goal:">Primary Business Goal:<a class="anchor-link" href="#Primary-Business-Goal:">¶</a></h4><p>Enable data-driven quality decisions by converting chromatographic QC data into clear, traceable, and regulator-aligned performance insights.</p>
+<h4 id="Project-Description">Project Description<a class="anchor-link" href="#Project-Description">¶</a></h4><p>This project demonstrates an end-to-end data analytics project that analyzes data from HPLC and GC instruments using Excel, SQL, Python, Tableau, and Power BI. It demonstrates data cleaning, relational database modeling, statistical QC, anomaly detection, time-series analysis, culminating in interactive dashboards for monitoring calibration performance and instrument health.</p>
+<h4 id="Project-Overview">Project Overview<a class="anchor-link" href="#Project-Overview">¶</a></h4><p>This project demonstrates analytics workflow that transforms laboratory-generated performance data from HPLC and GC instruments into actionable quality intelligence, enabling early detection of the instrument drift, calibration instability, and process anomalies before they compromise results. It bridges the gap between raw chromatographic outputs and decision-ready insights, allowing scientists, quality professionals, and supervisors to proactively monitor instrument performance, method stability, and analytical reliability.</p>
+<h4 id="Project-Relevance-to-Quality-Control-Scientist-and-Quality-Intelligence-Roles">Project Relevance to Quality Control Scientist and Quality Intelligence Roles<a class="anchor-link" href="#Project-Relevance-to-Quality-Control-Scientist-and-Quality-Intelligence-Roles">¶</a></h4><p>This project is designed to reflect real-world laboratory operations in manufacturing quality control, mining assay laboratories, and research facilities where data integrity, reproducibility, and timely interpretation of results are critical. This demonstrates actual responsibilities of QC Scientists, Analytical Chemists, QC Managers, Lab Supervisors, and Data Analysis Teams that works in regulated environments, including:</p>
+<ul>
+<li>Trending of chromatographic performance data for compliance monitoring</li>
+<li>Identification of early warning signals prior to specification failure</li>
+<li>Support of deviation investigations through data-driven evidence</li>
+<li>Instrument performance monitoring and method lifecycle management</li>
+<li>Translation of raw analytical data into actionable quality intelligence</li>
+</ul>
+<p>The workflow mirrors industry practice by integrating Excel-based laboratory data, SQL-driven data structuring, and Python-based statistical analysis to support regulatory-compliant quality decisions.</p>
+<h4 id="Scientific-&amp;-Quality-Context-of-this-Project">Scientific &amp; Quality Context of this Project<a class="anchor-link" href="#Scientific-&amp;-Quality-Context-of-this-Project">¶</a></h4><p>Chromatographic data is foundational to analytical decision-making, yet it is often siloed within instrument software, inconsistently structured, and underutilized for trend-based quality monitoring. Across regulated and non-regulated environments, laboratories face common challenges:</p>
+<ul>
+<li>Instrument drift and performance variability</li>
+<li>Delayed detection of analytical anomalies</li>
+<li>Fragmented data across instruments and runs</li>
+<li>Limited visibility into long-term trends</li>
+</ul>
+<p>In pharmaceutical and mining laboratories, these issues directly impact compliance, throughput, and risk management. In academic or research settings, they affect data reliability, reproducibility, and research validity. This project addresses these challenges through structured data modeling and statistical analysis.</p>
+<h4 id="Quality-&amp;-Compliance-Relevance">Quality &amp; Compliance Relevance<a class="anchor-link" href="#Quality-&amp;-Compliance-Relevance">¶</a></h4><p>This project applies data analytics to chromatographic quality control within a regulated laboratory framework. Analytical performance metrics are evaluated using principles consistent with:</p>
+<ul>
+<li>ICH Q2(R2): Validation of Analytical Procedures</li>
+<li>ICH Q14: Analytical Procedure Development</li>
+<li>FDA and EMA expectations for ongoing performance verification</li>
+<li>ISO/IEC 17025 requirements for method control and monitoring</li>
+</ul>
+<p>Key quality objectives addressed include:</p>
+<ul>
+<li>System suitability trending and early detection of performance drift</li>
+<li>Instrument equivalency and data comparability</li>
+<li>Method precision, accuracy, and robustness assessment</li>
+<li>Proactive identification of risks leading to OOS or OOT results</li>
+</ul>
+<p>The analytical insights generated support deviation prevention, CAPA prioritization, and data-driven decision-making in QC and analytical development environments.</p>
+<h4 id="Primary-Project-Goal:">Primary Project Goal:<a class="anchor-link" href="#Primary-Project-Goal:">¶</a></h4><p>Enable data-driven quality decisions by converting data from chromatographic instruments into clear, traceable, and regulator-aligned performance insights.</p>
+<h4 id="Project-Objectives">Project Objectives<a class="anchor-link" href="#Project-Objectives">¶</a></h4><ul>
+<li>Clean and convert raw HPLC/GC data into structured, analysis-ready datasets</li>
+<li>Design a 3NF relational schema suitable for chromatographic quality control data</li>
+<li>Implement foreign keys and indexing, and demonstrate SQL joins</li>
+<li>Compute accuracy, precision, calibration, and system suitability metrics</li>
+<li>Monitor instrument and method performance over time</li>
+<li>Detect instrument drift early, anomalies, and out-of-control conditions</li>
+<li>Produce audit-ready and reproducible end-to-end analytics workflow in JupyterLab (DDL + queries)</li>
+<li>Produce narrative-driven Jupyter Notebooks explaining analytical intent and methodology</li>
+<li>Scientific visualization in Python for QC interpretation and decision support</li>
+<li>Build interactive Tableau dashboards for performance monitoring</li>
+<li>Generate KPI-driven report in Power BI for management and quality review</li>
+<li>Bridge analytical chemistry and data analytics</li>
+</ul>
 <h4 id="Scope-of-Work:">Scope of Work:<a class="anchor-link" href="#Scope-of-Work:">¶</a></h4><p>This project delivers a complete, reproducible analytics pipeline that:</p>
 <ul>
 <li>Simulates realistic chromatographic QC datasets</li>
@@ -7533,28 +7578,14 @@ a.anchor-link {
 <li>Applies statistical quality control (SQC) and trend analytics</li>
 <li>Visualizes results in interactive dashboards for decision-makers</li>
 </ul>
-<h4 id="Project-Overview">Project Overview<a class="anchor-link" href="#Project-Overview">¶</a></h4><p>This project demonstrates how HPLC/GC quality control data can be transformed into actionable insights using:</p>
-<ul>
+<h3 id="Tools-&amp;-Technologies">Tools &amp; Technologies<a class="anchor-link" href="#Tools-&amp;-Technologies">¶</a></h3><ul>
 <li>Excel → Data simulation, initial data profiling, and validation</li>
 <li>SQLite + SQL (DBeaver) → Data modeling, normalization, querying</li>
 <li>Python (Pandas, NumPy, Scikit-Learn) → QC metrics, SQC, trend analysis</li>
 <li>Tableau → Interactive dashboards for QC monitoring and reporting</li>
+<li>Power BI → KPI-driven reporting for management and quality review</li>
 </ul>
-<h4 id="Project-Objectives">Project Objectives<a class="anchor-link" href="#Project-Objectives">¶</a></h4><ul>
-<li>Clean and structure chromatographic QC datasets</li>
-<li>Design a 3NF relational schema suitable for chromatographic QC data</li>
-<li>Implement foreign keys and indexing, and demonstrate SQL joins</li>
-<li>Compute accuracy, precision, calibration, and system suitability metrics</li>
-<li>Detect instrument drift early, anomalies, and out-of-control conditions</li>
-<li>Provide a reproducible end-to-end analytics workflow in JupyterLab (DDL + queries)</li>
-<li>Produce narrative-driven Jupyter Notebooks explaining analytical intent and methodology</li>
-<li>Scientific visualization in Python for QC interpretation and decision support</li>
-<li>Build interactive Tableau dashboards for exploratory analysis</li>
-<li>Generate KPI-driven report in Power BI for management and quality review</li>
-<li>Enable audit-ready, traceable data analysis</li>
-<li>Bridge analytical chemistry and data analytics</li>
-</ul>
-<p>This report will be divided into sections corresponding to phases of the data analysis life cycle - Ask, Prepare, Process, Analyse, Share, and Act.</p>
+<p><strong>This report will be divided into sections corresponding to phases of the data analysis life cycle - Ask, Prepare, Process, Analyse, Share, and Act.</strong></p>
 </div>
 </div>
 </div>
@@ -7586,27 +7617,20 @@ a.anchor-link {
 <li>How can QC data be summarized clearly for decision-makers?</li>
 </ul>
 <h4 id="PREPARE-PHASE-%E2%80%94-Data-Sources-&amp;-Rationale">PREPARE PHASE — Data Sources &amp; Rationale<a class="anchor-link" href="#PREPARE-PHASE-%E2%80%94-Data-Sources-&amp;-Rationale">¶</a></h4><p><strong>Data Source Description:</strong></p>
-<p>Because real chromatographic QC data is often proprietary, this project uses a simulated but analytically realistic dataset designed to reflect:</p>
-<ul>
-<li>HPLC &amp; GC retention behavior</li>
-<li>Peak area variability</li>
-<li>Calibration responses</li>
-<li>System suitability metrics</li>
-</ul>
-<p><strong>Raw Dataset:</strong>
+<p>Because real chromatographic QC data is often proprietary, this project uses a Excel-simulated but analytically realistic dataset designed to closely reflectreal HPLC/GC laboratory outputs while ensuring reproducibility and avoiding proprietary or confidential data exposure.
+Key variables include:</p>
+<pre><code>| Variables           | Purpose                                             |
+|---------------------|-----------------------------------------------------|
+| Sample_ID           | Unique identifier for each QC injection             |
+| Instrument_ID       | Differentiates HPLC vs GC systems                   |
+| RetentionTime_min   | Indicates chromatographic stability                 |
+| Peak_Area           | Primary quantitative detector response              |
+| PeakWidth_min       | Reflects column efficiency and system dispersion    |
+| Concentration_mgL   | Calculated analyte concentration                    |
+| TrueValue_mgL       | Reference value for accuracy assessment             |
+| Run_Date            | Enables time-based trend analysis                   |</code></pre>
+<p>The Excel-simulation steps are detailed in <code>notebooks/02_data_simulation.ipynb</code>, and the raw dataset saved as:
 hplc_gc_qc_data_raw.xlsx</p>
-<p><strong>Key Fields:</strong></p>
-<ul>
-<li>Sample_ID</li>
-<li>Instrument_ID</li>
-<li>RetentionTime_min</li>
-<li>Peak_Area</li>
-<li>PeakWidth_min</li>
-<li>Concentration_mgL</li>
-<li>TrueValue_mgL</li>
-<li>Run_Date</li>
-</ul>
-<p>This approach preserves real-world analytical behavior while ensuring reproducibility and data privacy.</p>
 <h4 id="PROCESS-PHASE-%E2%80%94-Cleaning-&amp;-Structuring">PROCESS PHASE — Cleaning &amp; Structuring<a class="anchor-link" href="#PROCESS-PHASE-%E2%80%94-Cleaning-&amp;-Structuring">¶</a></h4><p>Data Cleaning &amp; Validation (Excel)</p>
 <p><strong>Why This Matters:</strong></p>
 <p>QC statistics are only meaningful if the underlying data is valid.</p>
@@ -7616,11 +7640,12 @@ hplc_gc_qc_data_raw.xlsx</p>
 <li>Outlier screening (not blind removal)</li>
 <li>Date standardization for time-series analysis</li>
 </ul>
-<p><strong>Cleaned Output:</strong></p>
-<p>hplc_gc_qc_data_cleaned.xlsx</p>
+<p>The Cleaning &amp; Validation (Excel) steps are detailed in <code>notebooks/02_data_simulation.ipynb</code>, and the cleaned dataset saved as:
+hplc_gc_qc_data_cleaned.xlsx</p>
 <p>This file serves as the single source of truth for all downstream analysis.</p>
 <p><strong>SQL Data Modeling &amp; Normalization</strong></p>
-<p>A fully normalized SQLite schema (3NF) was designed to emulate real laboratory data infrastructure.</p>
+<p>A fully normalized SQLite schema (3NF) was designed to emulate real laboratory data infrastructure.
+SQL Data Modeling &amp; Normalization steps in DBeaver are detailed in <code>notebooks/03_SQL_database_relational_schema_creation.ipynb</code>, and the core tables are:</p>
 <p><strong>Core Tables:</strong></p>
 <ul>
 <li>instruments</li>
@@ -7637,8 +7662,8 @@ hplc_gc_qc_data_raw.xlsx</p>
 <li>Supports mant-to-one relationship</li>
 <li>Supports robust and scalable QC analytics</li>
 </ul>
-<h4 id="ANALYZE-PHASE-%E2%80%94-Statistical-&amp;-QC-Analytics">ANALYZE PHASE — Statistical &amp; QC Analytics<a class="anchor-link" href="#ANALYZE-PHASE-%E2%80%94-Statistical-&amp;-QC-Analytics">¶</a></h4><p>Python-Driven QC Analytics</p>
-<p>Using Pandas, NumPy, and Scikit-Learn, the project computes the following:</p>
+<h4 id="ANALYZE-PHASE-%E2%80%94-Statistical-&amp;-QC-Analytics">ANALYZE PHASE — Statistical &amp; QC Analytics<a class="anchor-link" href="#ANALYZE-PHASE-%E2%80%94-Statistical-&amp;-QC-Analytics">¶</a></h4><p><strong>Python-Driven QC Analytics</strong>
+Using Pandas, NumPy, and Scikit-Learn, the project computes the following:</p>
 <p><strong>(a) Sample-Level Metrics</strong></p>
 <ul>
 <li>Error (mg/L, %)</li>
@@ -7666,13 +7691,21 @@ hplc_gc_qc_data_raw.xlsx</p>
 <li>Resolution</li>
 <li>Tailing factor</li>
 </ul>
-<p>These analyses align conceptually with USP &lt;621&gt;, USP &lt;1225&gt;, and ICH Q2(R2) expectations.</p>
+<p>Detailed Python code blocks for these statistical and analytical computations are shown in<br/>
+<code>notebooks/04_data_importation_key_metrics_computation.ipynb</code>. These analyses align conceptually with USP &lt;621&gt;, USP &lt;1225&gt;, and ICH Q2(R2) expectations.</p>
 <p><strong>Key Analysis Categories:</strong></p>
 <ul>
 <li>Calibration Trend &amp; Stability</li>
-<li>QC &amp; Anomaly Detection</li>
 <li>Method Performance (Accuracy &amp; Precision)</li>
+<li>QC &amp; Anomaly Detection</li>
 <li>Instrument &amp; System Suitability</li>
+</ul>
+<p>Detailed steps for each of the Analysis Categories are respectively shown in:</p>
+<ul>
+<li><code>notebooks/05_calibration_trend_analysis.ipynb</code></li>
+<li><code>notebooks/06_method_performance_analysis.ipynb</code></li>
+<li><code>notebooks/07_qc_anomaly_analysis.ipynb</code></li>
+<li><code>notebooks/08_system_suitabilty_analysis.ipynb</code></li>
 </ul>
 <h4 id="SHARE-PHASE-%E2%80%94-Visualization-&amp;-Communication">SHARE PHASE — Visualization &amp; Communication<a class="anchor-link" href="#SHARE-PHASE-%E2%80%94-Visualization-&amp;-Communication">¶</a></h4><p><strong>Tableau Dashboards</strong></p>
 <p><strong>Dashboard 1 — Calibration Performance Overview</strong></p>
@@ -7721,31 +7754,80 @@ hplc_gc_qc_data_raw.xlsx</p>
 </tr>
 </tbody>
 </table>
-<h4 id="ACT-PHASE-%E2%80%94-Insights-&amp;-Recommendations">ACT PHASE — Insights &amp; Recommendations<a class="anchor-link" href="#ACT-PHASE-%E2%80%94-Insights-&amp;-Recommendations">¶</a></h4><p><strong>Key Findings</strong></p>
-<ul>
-<li>Calibration models remain linear but show early response factor drift</li>
-<li>EWMA and CUSUM detect subtle instability before control limit breaches</li>
-<li>Precision varies slightly by instrument, highlighting maintenance sensitivity</li>
-<li>System suitability trends flag potential column or injector degradation</li>
-</ul>
-<p><strong>Actionable Recommendations</strong></p>
-<ul>
-<li>Adopt EWMA &amp; CUSUM for routine QC review</li>
-<li>Monitor response factor trends, not just R²</li>
-<li>Standardize QC dashboards for monthly review</li>
-<li>Use rolling CV as an early warning KPI</li>
-<li>Centralize QC computations in Python for auditability</li>
-</ul>
-<p><strong>Expected Impact</strong></p>
-<ul>
+<h4 id="ACT-PHASE-%E2%80%94-Insights-&amp;-Recommendations">ACT PHASE — Insights &amp; Recommendations<a class="anchor-link" href="#ACT-PHASE-%E2%80%94-Insights-&amp;-Recommendations">¶</a></h4><h4 id="Insight-Driven-Analysis-Report">Insight-Driven Analysis Report<a class="anchor-link" href="#Insight-Driven-Analysis-Report">¶</a></h4><p><strong>(a) Peak Area Trend</strong><br/>
+<strong>Data-driven insight:</strong> Peak area trends remain statistically controlled across instruments, with isolated &gt;±3σ excursions detected over time.<br/>
+<strong>Risk:</strong> Potential loss of quantitative accuracy due to intermittent injector, detector, or sample preparation variability, increasing OOS risk.<br/>
+<strong>Actionable recommendation:</strong> Initiate targeted deviation review, verify system suitability, and trend instrument performance per ICH Q2/Q14 and ISO 17025.</p>
+<p><strong>(b) EWMA Chart</strong>
+<strong>Data-driven insight:</strong> EWMA trends show gradual peak area shifts approaching control limits across sequential runs, indicating low-level systematic drift not evident in individual results.<br/>
+<strong>Risk:</strong> Early method bias may progress to OOS or compromised quantitation if unaddressed.<br/>
+<strong>Actionable recommendation:</strong> Enhance trending review, verify system suitability parameters, and perform proactive instrument maintenance per ICH Q2/Q14 expectations.</p>
+<p><strong>(c) CUSUM Chart</strong><br/>
+<strong>Data-driven insight:</strong> CUSUM charts demonstrate sustained cumulative deviation from the historical mean across sequential runs, indicating persistent low-magnitude bias not captured by Shewhart limits.<br/>
+<strong>Risk:</strong> Undetected systematic drift may compromise long-term method accuracy and lead to delayed OOS findings.<br/>
+<strong>Actionable recommendation:</strong> Trigger trend-based investigation, reassess method control strategy, and implement preventive maintenance per ICH Q14 and ISO 17025.</p>
+<p><strong>(d) Rolling Statistics</strong><br/>
+<strong>Data-driven insight:</strong> Rolling mean and variability metrics show gradual increases over time, indicating emerging instability in quantitative response across sequential runs.<br/>
+<strong>Risk:</strong> Progressive loss of method precision and robustness, increasing likelihood of OOS or invalid trend conclusions.<br/>
+<strong>Actionable recommendation:</strong>  Strengthen ongoing performance monitoring, review maintenance and consumables, and reassess control limits per ICH Q2/Q14 and ISO 17025 expectations.</p>
+<p><strong>(e) Parity Plot</strong><br/>
+<strong>Data-driven insight:</strong> Parity plots show strong linear agreement with the 1:1 line across instruments, with minor dispersion at higher concentrations, indicating generally acceptable calibration accuracy.<br/>
+<strong>Risk:</strong> Emerging bias at range extremes may impact quantitation accuracy and reportable results.<br/>
+<strong>Actionable recommendation:</strong> Review calibration model fit and range suitability, verify r² and recovery against acceptance criteria, and update calibration strategy per ICH Q2/Q14 and ISO 17025.</p>
+<p><strong>(f) Accuracy Heatmap</strong><br/>
+<strong>Data-driven insight:</strong> Mean percent recovery remains largely centered around 100% across instruments and months, with localized periods approaching acceptance limits, indicating emerging temporal variability.<br/>
+<strong>Risk:</strong> Sustained recovery drift may compromise method accuracy and reportable results, increasing OOS risk.<br/>
+<strong>Actionable recommendation:</strong> Implement enhanced accuracy trending, review calibration and sample preparation practices, and initiate preventive CAPA per ICH Q2/Q14 and ISO 17025.</p>
+<p><strong>(g) Response Factor Stability</strong><br/>
+<strong>Data-driven insight:</strong> Response factor trends remain largely stable, with intermittent approaches to ±2σ Westgard limits across instruments, indicating early-stage analytical variability.<br/>
+<strong>Risk:</strong> Continued drift may degrade calibration integrity and quantitative accuracy, increasing OOS risk.<br/>
+<strong>Actionable recommendation:</strong> Apply Westgard rule evaluation, review calibration preparation and detector performance, and initiate preventive maintenance and trending per FDA, ICH Q2/Q14, and ISO 17025.</p>
+<p><strong>(h) Calibration Linearity (R²)</strong><br/>
+<strong>Data-driven insight:</strong> Calibration linearity (R²) meets predefined acceptance criteria across instruments, demonstrating adequate method linearity and model fit.<br/>
+<strong>Risk:</strong> Marginal proximity to the acceptance threshold may reduce sensitivity to emerging non-linearity over time.<br/>
+<strong>Actionable recommendation:</strong> Maintain periodic linearity verification, expand calibration range review, and trend R² results per ICH Q2/Q14 and ISO 17025 to ensure sustained method validity.</p>
+<p><strong>(i) Precision (RSD Distribution)</strong><br/>
+<strong>Data-driven insight:</strong> %RSD distributions are predominantly within typical ≤5% precision criteria across instruments, with occasional higher values indicating sporadic variability.<br/>
+<strong>Risk:</strong> Intermittent precision failures may compromise method repeatability and confidence in reported results.<br/>
+<strong>Actionable recommendation:</strong> Investigate high-%RSD events, assess replicate handling and instrument performance, and reinforce system suitability and precision monitoring per ICH Q2/Q14 and ISO 17025.</p>
+<p><strong>(j) Accuracy Recovery</strong><br/>
+<strong>Data-driven insight:</strong> %Recovery distributions are centered near 100% across instruments, with occasional values approaching acceptance limits, indicating generally acceptable accuracy with minor variability.<br/>
+<strong>Risk:</strong> Outlier recoveries may signal calibration drift or sample preparation bias, potentially impacting reportable results.<br/>
+<strong>Actionable recommendation:</strong>  Review accuracy outliers, verify calibration integrity, and reinforce routine accuracy trending and system suitability checks per ICH Q2/Q14 and ISO 17025.</p>
+<p><strong>(k) Instrument Comparison</strong><br/>
+<strong>Data-driven insight:</strong> Measured concentration distributions are comparable across instruments, with modest inter-instrument spread, indicating generally consistent performance.<br/>
+<strong>Risk:</strong> Systematic inter-instrument bias may affect data comparability and trending across platforms.<br/>
+<strong>Actionable recommendation:</strong> Perform cross-instrument equivalency assessment, review calibration and standardization practices, and document instrument comparability per FDA and ISO 17025 requirements.</p>
+<p><strong>(l) Resolution Trend</strong><br/>
+<strong>Data-driven insight:</strong> Resolution trends remain above the minimum acceptance criterion (Rs ≥ 1.5) across instruments, with localized variability observed in rolling statistics.<br/>
+<strong>Risk:</strong> Progressive resolution decline may impair peak separation, increasing mis-identification and quantitation errors.<br/>
+<strong>Actionable recommendation:</strong> Intensify system suitability trending, assess column condition and mobile phase performance, and initiate preventive maintenance or method adjustment per ICH Q2/Q14 and ISO 17025.</p>
+<p><strong>(m) Cpk Analysis</strong><br/>
+<strong>Data-driven insight:</strong> Capability indices (Cpk) for resolution, tailing, plates, and retention time are generally ≥1.33, indicating adequate and stable instrument performance within defined system suitability limits.<br/>
+<strong>Risk:</strong> Marginal Cpk values may reduce process robustness, increasing sensitivity to routine variability.<br/>
+<strong>Actionable recommendation:</strong> Trend Cpk metrics routinely, tighten preventive maintenance and calibration schedules, and reassess suitability limits per FDA, ICH Q2/Q14, and ISO 17025.</p>
+<p><strong>(n) Plate Change Impact</strong><br/>
+<strong>Data-driven insight:</strong> Plate count trends are largely stable for both HPLC and GC systems, with isolated ≥3σ deviations indicating abrupt efficiency changes.<br/>
+<strong>Risk:</strong> Sudden plate count loss may reflect column degradation or system contamination, reducing separation efficiency and method robustness.<br/>
+<strong>Actionable recommendation:</strong> Investigate flagged events per deviation procedures, assess column condition and system cleanliness, and reinforce efficiency trending and preventive maintenance in alignment with ICH Q2/Q14 and ISO 17025.</p>
+<p><strong>(o) System Suitability Heatmap</strong><br/>
+<strong>Data-driven insight:</strong> Monthly system suitability performance is predominantly compliant across instruments, with intermittent metric-specific failures observed by period.<br/>
+<strong>Risk:</strong> Recurrent localized failures may indicate emerging instrument or method instability, increasing deviation and OOS risk.<br/>
+<strong>Actionable recommendation:</strong> Perform period-based root cause analysis, strengthen trending reviews, and implement targeted CAPA and preventive maintenance per FDA, ICH Q2/Q14, and ISO 17025.</p>
+<p><strong>(p) Tailing Factor Trend</strong><br/>
+<strong>Data-driven insight:</strong> Tailing factor values remain predominantly within the established acceptance limit (TF ≤ 2), with occasional upward excursions observed across instruments.<br/>
+<strong>Risk:</strong> Increased tailing may impair peak integration accuracy and quantitation reliability.<br/>
+<strong>Actionable recommendation:</strong> Investigate excursions via deviation procedures, evaluate column health and system cleanliness, and reinforce routine tailing trending and preventive maintenance per ICH Q2/Q14 and ISO 17025.</p>
+<h3 id="Final-Takeaway">Final Takeaway<a class="anchor-link" href="#Final-Takeaway">¶</a></h3><p>Analytical evaluation of HPLC and GC instruments demonstrates overall compliance with system suitability and QC criteria (RSD ≤5%, %Recovery 95–105%, resolution ≥1.5, tailing ≤2, plates ≥2000). Minor trends in retention time, plate counts, and tailing suggest early-stage column or system variability. Proactive maintenance, targeted trending, and CAPA review are recommended to sustain method robustness, prevent OOS events, and ensure ongoing GxP/regulatory compliance.</p>
+<p>This project therefore demonstrated how laboratory QC data can evolve from static records into proactive quality intelligence using accessible analytics tools. It bridges analytical chemistry and data analytics, showcasing a skill set directly relevant to modern, data-driven scientific and industrial environments.</p>
+<h4 id="Expected-Impact">Expected Impact<a class="anchor-link" href="#Expected-Impact">¶</a></h4><ul>
 <li>Earlier detection of analytical drift</li>
 <li>Reduced risk of invalid results</li>
 <li>Improved regulatory defensibility</li>
 <li>Faster QC decision-making</li>
 <li>Demonstrates scalable analytics maturity</li>
 </ul>
-<p><strong>Deliverables</strong></p>
-<table>
+<h4 id="Deliverables">Deliverables<a class="anchor-link" href="#Deliverables">¶</a></h4><table>
 <thead>
 <tr>
 <th>Deliverable</th>
@@ -7775,8 +7857,7 @@ hplc_gc_qc_data_raw.xlsx</p>
 </tr>
 </tbody>
 </table>
-<p><strong>Schedule Overview</strong></p>
-<table>
+<h4 id="Schedule-Overview">Schedule Overview<a class="anchor-link" href="#Schedule-Overview">¶</a></h4><table>
 <thead>
 <tr>
 <th>Phase</th>
@@ -7803,8 +7884,20 @@ hplc_gc_qc_data_raw.xlsx</p>
 </tbody>
 </table>
 <p>Estimated Completion: 4 weeks (part-time, revision-inclusive)</p>
-<p><strong>Final Takeaway</strong></p>
-<p>This project demonstrates how laboratory QC data can evolve from static records into proactive quality intelligence using accessible analytics tools. It bridges analytical chemistry and data analytics, showcasing a skill set directly relevant to modern, data-driven scientific and industrial environments.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=2c29406d-3897-4337-8d55-531670af47c5">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
 </div>
 </div>
 </div>

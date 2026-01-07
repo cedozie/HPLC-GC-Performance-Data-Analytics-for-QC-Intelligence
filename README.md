@@ -416,7 +416,7 @@ pip install pandas numpy matplotlib seaborn sqlalchemy jupyter
 
 #### 3. View the Full Report
 Open the following link in any browser to view a consolidated analytical report (narrative and QC insights) as a static HTML page:  
-https://cedozie.github.io/HPLC-GC-Performance-Data-Analytics-for-Quality-Intelligence/
+https://cedozie.github.io/HPLC-GC-Performance-Data-Analytics-for-QC-Intelligence/01_HPLC_GC_performance_analysis_report.html
 
 #### 4. View Interactive Dashboards (Tableau / Power BI)
 In addition to the notebook-based analysis and static report, this project includes interactive quality intelligence dashboards designed for laboratory managers, QA/QC teams, and scientific leadership.

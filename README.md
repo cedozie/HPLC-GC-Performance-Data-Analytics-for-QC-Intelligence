@@ -471,7 +471,7 @@ Open the following link in any browser to view a published Power BI version (not
 **Data Visualization & Dashboarding**
 - Creation of clear, interpretable scientific visualizations in Python for QC assessment
 - Development of interactive dashboards in Tableau for exploratory quality monitoring
-- Development of KPI-driven reports in Power BI for management and QA review
+- Development of KPI-driven reports in Power BI for management and QA review (not yet available).
 
 **End-to-End Analytics Workflow Design**
 - Design of a modular analytics pipeline from simulated raw QC data to actionable insights
